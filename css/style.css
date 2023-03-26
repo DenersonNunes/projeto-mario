@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.game-board {
+    width: 100%;
+    height: 500px;
+    border: 15px solid green;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient( #87CEEB, #e0f6ff );
+}
+ 
+.pipe {
+  position: absolute;
+  bottom: 0;
+  width: 60px;
+  left: 86 px;
+  animation: pipe-animation 2s infinite linear;
+} 
+.nuvem { 
+    position: absolute;
+    bottom: 0;
+    width: 86px;
+    animation: nuvem-animation 8s infinite linear
+} 
+
+.nuvens { 
+    position: absolute;
+    bottom: 0;
+    width: -86px;
+    animation: nuvens-animation 8s infinite linear
+}
+.mario {
+    width: 90px;
+    position: absolute;
+    bottom: 0;
+    
+}
+ 
+.jump {
+    animation: jump 950ms  ease-out;
+}
+
+@keyframes pipe-animation {
+    from {
+     right: -0;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+@keyframes jump {
+   0% {
+    bottom: 0;
+   } 
+   40% {
+    bottom: 160px;
+   }
+    
+    50% {
+        bottom: 160px;
+    }
+    
+    60% {
+        bottom: 180px;
+    }
+
+   100% {
+    bottom: 0;
+   }
+}
+
+.nuvem {
+ animation: nuvem 950ms ease-out;
+}
+
+@keyframes nuvem-animation  {
+    from {
+     right: -0;
+    }
+
+    to {
+    right: 100%;
+    }
+}
+@keyframes nuvem {
+   0% {
+    bottom: 0;
+   } 
+   40% {
+    bottom: 160px;
+   }
+    
+    50% {
+        bottom: 160px
+    }
+    
+    60% {
+        bottom: 180px
+    }
+
+   100% {
+    bottom: 0;
+   }
+}
+.nuvens {
+    animation: nuvem 950ms ease-out;
+   }
+
+@keyframes nuvens-animation {
+    from {
+     right: -1  px;
+    }
+
+    to {
+    right: 100%;
+    }
+}
+@keyframes nuvem {
+   0% {
+    bottom: 0;
+   } 
+   40% {
+    bottom: 160px;
+   }
+    
+    50% {
+        bottom: 160px
+    }
+    
+    60% {
+        bottom: 180px
+    }
+
+   100% {
+    bottom: 0;
+   }
+}
