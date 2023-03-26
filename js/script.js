@@ -1,5 +1,6 @@
 const mario = document.querySelector('.mario');
 const pipe = document.querySelector('.pipe');
+const nuvens = document.querySelector('.nuvem');
 const jump = () => {
     mario.classList.add('jump');
     setTimeout(() => {
@@ -25,7 +26,10 @@ const loop = setInterval(() => {
         const marioPosition = +window.getComputedStyle(mario).left.replace('px', '');
         mario.style.left = `${marioPosition + 10}px`;
     }
-    
+    const restartButton = document.getElementById('restart-btn');
+    restartButton.addEventListener('click', () => {
+    window.location.reload();
+    });
 
     if (pipePosition <= 85 &&  pipePosition  > 0 && marioPosition < 80) {
         pipe.style.animation = 'none';
