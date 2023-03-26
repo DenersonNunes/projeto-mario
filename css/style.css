@@ -19,7 +19,7 @@
   bottom: 0;
   width: 60px;
   left: 86 px;
-  animation: pipe-animation 2s infinite linear;
+  animation: pipe-animation 1s infinite linear;
 } 
 .nuvem { 
     position: absolute;
@@ -36,7 +36,7 @@
 }
  
 .jump {
-    animation: jump 1050ms  ease-out;
+    animation: jump 950ms  ease-out;
 }
 
 @keyframes pipe-animation {
