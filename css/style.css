@@ -13,7 +13,20 @@
     overflow: hidden;
     background: linear-gradient( #87CEEB, #e0f6ff );
 }
- 
+#restart-btn {
+    position: fixed;
+    cursor: pointer;
+    font-size: large;
+    bottom: -0;
+    left: 5%;
+    width: 120px;
+    height: 50px ;
+    color: blue;
+    transform: translate(-35%);
+    border: black;
+    background: #87eb89;
+  }
+  
 .pipe {
   position: absolute;
   bottom: 0;
